@@ -15,3 +15,7 @@ steps:
       sudo apt-get install -y libgtk-4-dev
       make
     displayName: 'Build with GTK dependency'
+  - script: |
+      make test
+      ./build/testChess
+    displayName: 'Tests'
